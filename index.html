@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portpolio</title>
+    <style>
+
+        *{
+            margin: 0;
+            scroll-behavior: smooth;
+            /* transition: all 3s ease-in-out; */
+        }
+
+        nav{
+            height: 100vh;
+           position: fixed;
+            width: 300px;
+            border: solid;
+            
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(233,175,204,1) 6%, rgba(148,187,233,1) 100%);
+        }
+
+        .nav-logo img{
+            position: absolute;
+            left: 50px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: solid;
+        }
+
+        .nav-items{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center ;
+            margin-top: 250px;
+            line-height: 50px;
+        }
+
+        .nav-items a{
+            position: sticky;
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+        }
+
+        .port-folio{
+            display: flex;
+        }
+
+        .home{
+            
+            height: 100vh;
+            margin-left: 400px;
+            width: 940px;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+           
+        }
+
+        .content{
+            height: 100vh;
+            background-color: rgb(30, 175, 201);
+
+        }
+
+        .home-text{
+            height: 500px;
+            width: 500px;
+        }
+
+        .home-name{
+           
+            margin-top: 200px;
+            top: 0;
+            width: 395px;
+            
+        }
+
+        .home-image{
+            /* display: flex; */
+            margin-left: 650px;
+            margin-top: -150px;
+        }
+
+        .about{
+            width:700px
+        }
+        
+        .about h2{  
+            color: rgb(48, 32, 32);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .home-image img{
+            border: solid;
+            border-radius: 25%;
+           width: 200px; 
+           height: 200px;
+        }
+
+        /* qualifiaction */
+        .qualification{
+            background-color: rgba(191, 201, 50, 0.526);
+            height: 100vh;
+            width: 100%;
+        }
+
+        .qualification .qual{
+            padding-top: 50px;
+        
+            margin-left: 500px;
+        }
+
+        .qual li{
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 35px;
+        } 
+
+        .qual h1{
+           color: rgb(218, 80, 80);
+        }
+
+         /* skills */
+         .skills{
+            background-color: rgba(234, 0, 255, 0.357);
+            width: 100%;
+        }
+        .ski h1{
+            color: rgb(218, 80, 80);
+            font-size: 30px;
+        }
+
+        .skills .ski{
+            padding-top: 50px;
+            height: 100vh;
+            margin-left: 500px;
+        }
+
+        .ski li{
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 41px;
+        } 
+
+         /* info */
+         .info{
+            background-color: rgb(238, 195, 170);
+            height: 100vh;
+            width: 100%;
+        }
+
+        .info .information{
+            height: 100vh;
+            font-size: 30px;
+            margin-left: 500px;
+            padding-top: 30px;
+        }
+        
+         /* contact */
+         .contact{
+            background-color:palegreen;
+            width: 100%;
+            height: 100dvh;
+        }
+
+        .con h1{
+            font-size: 50px;
+            color: green;
+        }
+        .contact .con{
+            height: 80vh;
+            margin-left: 400px;
+            padding-top: 100px;
+        }
+
+        .con li{
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 55px;
+        } 
+
+        .contact-images{
+            padding-top: 60px;
+            margin-left: 0px;
+
+        }
+
+        /* project */
+        .project{
+            background-color:paleturquoise;
+            height: 100vh;
+            width: 100%;
+        }
+
+
+        .project .pro{
+            height: 100vh;
+            margin-left: 400px;
+            padding-top: 100px;
+        }
+
+        .pro li{
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 35px;
+        } 
+
+        
+    </style>
+</head>
+<body>
+    <div class="port-folio">
+    <nav>
+        <div class="nav-logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/005/008/145/original/rs-or-r-s-letter-alphabet-logo-design-in-format-free-vector.jpg" alt="">
+        </div>
+       
+        <div class="nav-items">
+            <a href="#home">Home</a>
+            <a href="#qualification">Qualification</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#info">Info</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="home" id="home">
+            <div class="home-text">
+                <div class="home-name"> 
+                    <h1 style="font-weight: bolder; color: black; font-size: 40px;">Rajendra</h1>
+                </div>
+                <br>
+                <div class="about">
+                    <h2>I am Fascinate Python Full Stack Developer.</h2>  </h2>
+                </div>
+    
+                <div class="home-image">
+                    <img src="./images/pass photo.jpg" alt="">
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <div class="qualification" id="qualification">
+            <div class="qual">
+            <h1>Qualifications:</h1>
+            <br>
+            <ul>
+                <li>SSLC</li>
+                <ul>
+                    <li>SMTHS KOllur</li>
+                    <li>83.52%</li>
+                </ul>
+                   
+                    <li>PUC</li>
+                    <ul>
+                    <li>R N Shetty Composite Pu College kundapura</li>
+                    <li>71%</li>
+                </ul>
+
+                <li>Degree</li>
+                <ul><li>Ramaiah Institute of Technology</li>
+                <li>6.6 CGPA</li></ul>
+            </ul>
+        </div>
+        </div> 
+
+        
+        <div class="skills" id="skills">
+            <div class="ski">
+            <h1>Skills:</h1>
+
+            <ul>
+                <li>Python</li>
+                <ul>
+                    <li>Basics</li>
+                    <li>OOPS</li>
+                    <li>Collection</li>
+
+                </ul>
+                   
+                    <li>SQL</li>
+                    <ul>
+                    <li>Commands</li>
+                    <li>Functions</li>
+                </ul>
+
+                <li>Web Technologies</li>
+                <ul><li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li></ul>
+               
+            </ul>
+            </ul>
+            <div style="width: 300px; margin-left: 300px; margin-top: -400px;">
+                <img src="H:\WEB PROJECT\port-images\html.gif" alt="" width="400px" style="border-radius: 25%;">
+            </div>
+        </div>
+
+        <div class="project" id="project">
+            <div class="pro" >
+                <h1 style="color: red;">Projects:</h1>
+    
+                <ul>
+                    <li style="color: rgb(239, 80, 80);">Mini project</li>
+                    <ul>
+                        <li>ANALYSIS ON MECHANICAL PROPERTIES OF ORGANIC COMPOUND TREATED EN31 STEEL USING STATISTICAL APPROACH.</li>    
+                    </ul>
+                       
+                        <li style="color: rgb(239, 80, 80);">Major project</li>
+                        <ul>
+                        <li>LOCATION SELECTION FOR ELECTRIC VEHICLE CHARGING STATIONS IN BENGALURU CITY.</li>
+                    </ul>
+    
+                   </ul>
+                <div style="width: 300px; margin-left: 550px; margin-top: -120px;">
+                    <img src="H:\WEB PROJECT\port-images\pro.gif" alt="" width="350px" height="170px" style="border-radius: 25%;">
+                </div>
+            </div>
+        </div>
+
+        <div class="info" id="info">
+            <div class="information">  
+                <table  cellpadding="12px"> 
+                    <tr>
+                        <td  colspan="2" style="color: rgba(216, 51, 51, 0.762); font-size: 50px; ">Information</td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>:- Rajendra</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Place</td>
+                        <td>:- Udupi</td>
+                    </tr>
+                    <tr>
+                        <td>DOB</td>
+                        <td>:- 02-08-2001</td>
+                    </tr>
+                    <tr>
+                        <td>Nationality</td>
+                        <td>:- Indian</td>
+                    </tr>
+                    <tr>
+                        <td>Marital Status</td>
+                        <td>:- Unmarried</td>
+                    </tr>
+                    <tr>
+                        <td>Languages</td>
+                        <td>:- Kannada,English,Hindi,Telugu </td>
+                    </tr>
+                </table> 
+                </div>
+                </div>
+            
+        </div>
+
+        <div class="contact" id="contact">
+            
+            <div class="con">
+            
+                <h1>Contact Details:</h1>
+    
+                
+                <div class="contact-images">
+                <a href="https://www.instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" width="100px" alt=""></a> &nbsp; &nbsp;&nbsp;
+                <a href="https://www.twitter.com"><imgw src="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/brand-download-img-1.jpg.twimg.1920.jpg" width="100px" alt=""></a> &nbsp; &nbsp;&nbsp;
+                <a href="https://www.facebook.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png" width="100px" alt=""></a> &nbsp; &nbsp;&nbsp; 
+                <a href="https://www.whatsapp.com"><img src="https://static.vecteezy.com/system/resources/previews/016/716/480/original/whatsapp-icon-free-png.png" width="100px" alt=""></a> &nbsp; &nbsp;&nbsp; 
+                <a href="mailto:rajendrashetty2001@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" width="100px" alt=""></a> &nbsp; &nbsp;&nbsp; 
+                <a href="tel:9916012265"><img src="https://e7.pngegg.com/pngimages/915/706/png-clipart-blue-call-icon-dialer-android-google-play-telephone-phone-blue-text.png" width="100px" alt=""></a> &nbsp; &nbsp;&nbsp;     
+                <a href="https://www.linkedin.com"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="100px" alt=""></a> &nbsp; &nbsp;&nbsp;
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
